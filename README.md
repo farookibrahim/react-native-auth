@@ -1,4 +1,29 @@
-# Welcome to your Expo app 👋
+# User Authentication App
+
+## Objective
+This project is a React Native application built with Expo that implements Login and Signup functionality using the React Context API to manage the authentication state. It aims to demonstrate an understanding of authentication flows, state management, form handling, and navigation.
+
+## Features
+- **Authentication Context**: Manages global authentication state with functions for login, signup, and logout.
+- **Screens**:
+  - **Login Screen**: 
+    - Input fields for Email and Password.
+    - Login button to trigger authentication.
+    - Error messages for invalid input.
+    - Navigation to Signup screen.
+  - **Signup Screen**: 
+    - Input fields for Name, Email, and Password.
+    - Signup button to create a new user.
+    - Error messages for missing fields and invalid input.
+    - Navigation back to Login screen.
+  - **Home Screen**: 
+    - Displays the logged-in user's name and email.
+    - Logout button to return to the Login screen.
+- **Persist Authentication**: Uses AsyncStorage to keep users logged in after closing and reopening the app.
+- **Navigation**: Navigation between screens is managed using Expo Router, providing seamless transitions and enhancing the overall user experience.
+- **Password Visibility Toggle**: An eye icon to toggle the visibility of the password field.
+
+## Setup Instructions
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
